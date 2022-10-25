@@ -1,0 +1,126 @@
+.header {
+  background: linear-gradient(
+    69deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.9444152661064426) 12%,
+    rgba(0, 0, 0, 0.9444152661064426) 21%,
+    rgba(0, 0, 0, 1) 32%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    z-index: 6;
+    &-list {
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        position: absolute;
+        z-index: 5;
+        height: 100vh;
+        left: -1000px;
+        top: 60px;
+        width: 100%;
+        gap: 15px;
+        background: #000;
+        transition: left 0.4s;
+        &.active {
+          left: 0;
+        }
+      }
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      a {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 18px;
+        background: linear-gradient(140.6deg, #000 -27.18%, #000 126.06%);
+        box-shadow: 0px 0px 49px rgba(0, 0, 0, 0);
+        transition: all 0.6s;
+        border-radius: 10px;
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          padding: 14;
+        }
+        @media screen and (max-width: 768px) {
+          padding: 5px 10px;
+        }
+        &:hover {
+          color: #000;
+
+          background: linear-gradient(
+            140.6deg,
+            #ffffff -27.18%,
+            #dedede 126.06%
+          );
+          box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+        }
+      }
+    }
+    &-btn {
+      padding: 18px 24px 18px 40px;
+      background: linear-gradient(140.6deg, #ffffff -27.18%, #dedede 126.06%);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      word-spacing: 8px;
+      box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+      border-radius: 10px;
+      @media screen and (max-width: 768px) {
+        padding: 10px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 18px;
+      }
+      img {
+        transform: rotateZ(0deg);
+        transition: 0.3s;
+      }
+      &:hover {
+        background: linear-gradient(140.6deg, #ffffff -27.18%, #a09e9e 126.06%);
+        img {
+          transform: rotateZ(135deg);
+        }
+      }
+    }
+  }
+  &__lines-btn {
+    display: none;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    @media screen and (max-width: 768px) {
+      display: block;
+      cursor: pointer;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      width: 32px;
+      height: 2px;
+      transition: 0.5s;
+      //сделать паддинги под хрестик
+    }
+    &::before {
+      top: calc(50% - 3px);
+      right: 0;
+    }
+    &::after {
+      top: calc(50% + 3px);
+      right: 0;
+    }
+    &.active {
+      &::before {
+        transform: rotateZ(135deg);
+      }
+      &::after {
+        transform: rotateZ(227deg);
+        top: 12px;
+      }
+    }
+  }
+}
