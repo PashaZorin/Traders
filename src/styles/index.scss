@@ -1,0 +1,20 @@
+@import "scss-reset/_reset.scss";
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  margin-top: -1px;
+  background: url("../images/main/bgEllipseLine4.svg") right no-repeat;
+}
+.conteiner {
+  width: 80%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+}

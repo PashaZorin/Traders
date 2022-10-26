@@ -1,13 +1,4 @@
 .header {
-  background: linear-gradient(
-    69deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.9444152661064426) 12%,
-    rgba(0, 0, 0, 0.9444152661064426) 21%,
-    rgba(0, 0, 0, 1) 32%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
   &__menu {
     display: flex;
     justify-content: space-between;
@@ -68,6 +59,7 @@
       word-spacing: 8px;
       box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
       border-radius: 10px;
+      transition: 0.5s;
       @media screen and (max-width: 768px) {
         padding: 10px;
       }
@@ -76,10 +68,11 @@
       }
       img {
         transform: rotateZ(0deg);
-        transition: 0.3s;
+        transition: 0.5s;
       }
       &:hover {
         background: linear-gradient(140.6deg, #ffffff -27.18%, #a09e9e 126.06%);
+        box-shadow: 0px 0px 49px rgba(166, 163, 181, 0.4);
         img {
           transform: rotateZ(135deg);
         }
@@ -103,7 +96,6 @@
       width: 32px;
       height: 2px;
       transition: 0.5s;
-      //сделать паддинги под хрестик
     }
     &::before {
       top: calc(50% - 3px);

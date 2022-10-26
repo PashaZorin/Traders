@@ -1,12 +1,12 @@
 import React from "react";
-import Meet from "./meet/Meet";
-import Technologies from "./technologies/Technologies";
+import Future from "./Future";
+import Technologies from "./Technologies";
 
 const Main = () => {
   return (
     <main>
-      <Meet />
       <Technologies />
+      <Future />
     </main>
   );
 };

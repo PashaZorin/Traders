@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonsGroup from "./ButtonsGroup";
-import "./meet.scss";
-import VectorErrow from "../../../images/main/meet/VectorErrow.png";
+import "../../styles/meet.scss";
+import VectorErrow from "../../images/header/meet/VectorErrow.png";
 
 const Meet = () => {
   return (

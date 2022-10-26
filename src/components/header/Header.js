@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import C from "../../images/header/C.png";
-import "./header.scss";
+import "../../styles/header.scss";
 import shape from "../../images/header/shape.png";
+import Meet from "./Meet";
 
 const Header = () => {
   const [menuMobIsActive, setMenuMobIsActive] = useState(false);
@@ -46,6 +47,7 @@ const Header = () => {
           onClick={toggleMenu}
         ></div>
       </menu>
+      <Meet />
     </header>
   );
 };
