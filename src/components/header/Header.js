@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import C from "../../images/header/C.png";
 import "../../styles/header.scss";
-import shape from "../../images/header/shape.png";
+import errow from "../../images/header/errow.svg";
 import Meet from "./Meet";
 
 const Header = () => {
@@ -37,7 +37,7 @@ const Header = () => {
           })}
           <li>
             <button className="header__menu-btn">
-              Career <img src={shape} alt="shape"></img>
+              Career <img src={errow} alt="shape"></img>
             </button>
           </li>
         </ul>

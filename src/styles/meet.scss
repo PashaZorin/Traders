@@ -4,14 +4,6 @@
   //background-color: #000000;
   background: url("../images/header/meet/Code.png") 45px 119px no-repeat,
     url("../images/header/meet/Vector.png");
-  //  linear-gradient(
-  //    135deg,
-  //    #000000 0%,
-  //    #121111 9%,
-  //    #000000 21%,
-  //    #000000 55%,
-  //    #010122 84%
-  //  );
   &__conteiner {
     display: flex;
     gap: 92px;
@@ -20,7 +12,6 @@
     margin-left: 10%;
   }
   &__text {
-    max-width: 650px;
     &-decoration {
       font-weight: 500;
       font-size: 19.2776px;
@@ -30,7 +21,6 @@
       position: relative;
     }
     &-title {
-      min-width: 650px;
       margin: 30px 0;
       font-weight: 600;
       font-size: 96.3878px;
