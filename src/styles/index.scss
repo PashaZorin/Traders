@@ -8,13 +8,27 @@ body {
 main {
   margin-top: -1px;
   background: url("../images/main/background/bgEllipseLine4.svg") right
-    no-repeat;
+      no-repeat,
+    url("../images/main/background/bgEllipseLine3.svg") right no-repeat,
+    url("../images/main/background/bgEllipseLine2.svg") right no-repeat,
+    url("../images/main/background/bgEllipseLine1.svg") right no-repeat;
+  @media screen and (max-width: 1024px) {
+    background: url("../images/main/background/bgEllipseLine4.svg") right
+        no-repeat,
+      url("../images/main/background/bgEllipseLine3.svg") right no-repeat,
+      url("../images/main/background/bgEllipseLine2.svg") right no-repeat;
+  }
+  @media screen and (max-width: 768px) {
+    background: url("../images/main/background/bgEllipseLine3.svg") 0 0px
+        no-repeat,
+      url("../images/main/background/bgEllipseLine2.svg") 300px 200px no-repeat;
+  }
 }
 .conteiner {
   width: 80%;
   margin: 0 auto;
   @media screen and (max-width: 1024px) {
-    width: 90%;
+    width: 76%;
   }
 }
 a {

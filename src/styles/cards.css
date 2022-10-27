@@ -1,0 +1,101 @@
+.cards__conteiner {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  padding: 90px 0 160px 0;
+}
+
+.cards .card {
+  overflow: hidden;
+  border: 2px solid #4f5667;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 46px;
+  background: linear-gradient(150deg, #0e0f14 0%, #0a0a0d 50%, #181819 100%);
+}
+
+.cards .card:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.cards .card:nth-child(1) .card__text {
+  margin-top: -160px;
+}
+
+.cards .card:nth-child(2) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.cards .card:nth-child(3) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/7;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.cards .card:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.cards .card__text {
+  padding: 37px 0 37px 30px;
+}
+
+.cards .card__text-description {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.cards .card__text-title {
+  padding: 61px 0;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.cards .card__text-title span {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  background: linear-gradient(89.95deg, #487fff -1.65%, #73b5ff 51.06%, #cb76ff 99.96%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards .card__link {
+  position: relative;
+}
+
+.cards .card__link::after {
+  position: absolute;
+  content: url("../images/header/errow.svg");
+  fill: red;
+}
+/*# sourceMappingURL=cards.css.map */
