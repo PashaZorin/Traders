@@ -1,20 +1,20 @@
 .meet {
   color: #fff;
   padding-top: 62px;
-  //background-color: #000000;
   background: url("../images/header/meet/Code.png") 45px 119px no-repeat,
-    url("../images/header/meet/Vector.png");
+    url("../images/header/meet/Vector.png") no-repeat;
+  text-align: center;
   &__conteiner {
     display: flex;
     gap: 92px;
-    align-items: center;
     justify-content: space-between;
     margin-left: 10%;
   }
   &__text {
+    text-align: left;
     &-decoration {
       font-weight: 500;
-      font-size: 19.2776px;
+      font-size: 19px;
       line-height: 23px;
       text-transform: uppercase;
       color: #aaaaaa;
@@ -23,10 +23,11 @@
     &-title {
       margin: 30px 0;
       font-weight: 600;
-      font-size: 96.3878px;
+      font-size: 96px;
       line-height: 90px;
-      text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
       span {
+        display: inline-block;
         background: linear-gradient(
           89.95deg,
           #487fff -1.65%,
@@ -36,9 +37,10 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
         position: relative;
-        &::after {
+        margin-right: 40px;
+        &::before {
           position: absolute;
           content: "";
           width: 35px;
@@ -49,24 +51,30 @@
             #73b5ff 51.06%,
             #73b5ff 99.96%
           );
-          bottom: 20px;
-          right: -50px;
+          bottom: 10px;
+          right: -60px;
         }
       }
     }
     &-subtitle {
       font-weight: 400;
-      font-size: 25.7034px;
+      font-size: 26px;
       line-height: 30px;
-
+      padding-bottom: 90px;
       color: #e9e9e9;
     }
   }
   &__buttons-group {
-    transform: translateY(90px);
+    background: url(../images/header/meet/buttonsGroupDesk.svg) top right
+      no-repeat;
+    min-width: 586px;
+    height: 435px;
   }
   &__button {
-    margin: 60px 0 35px calc(50% - 108px);
+    &.mob {
+      display: none;
+    }
+    margin: 0 auto 75px auto;
     background: linear-gradient(140.6deg, #3e6ff9 -27.18%, #3e53f8 126.06%);
     box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
     border-radius: 10px;
@@ -91,46 +99,66 @@
       }
     }
   }
-  //  &__buttons {
-  //    &-group {
-  //      button {
-  //        color: #fff;
-  //        border-radius: 17px;
-  //        font-size: 13px;
-  //        line-height: 15px;
-  //      }
-  //    }
-  //    &-bottom {
-  //      button {
-  //        padding: 30px 22px;
-  //        border-radius: 47px;
-  //        background: linear-gradient(
-  //          0deg,
-  //          rgba(8, 8, 22, 0.9332107843137255) 34%,
-  //          rgba(31, 34, 103, 1) 100%
-  //        );
-  //      }
-  //    }
-  //    &-center {
-  //      :last-child {
-  //        position: relative;
-  //        z-index: 5;
-  //        &::before {
-  //          content: "";
-  //          position: absolute;
-  //          top: 0;
-  //          left: 0;
-  //          transform: rotate(45deg);
-  //          width: 60px;
-  //          height: 60px;
-  //          z-index: -1;
-  //          background: linear-gradient(
-  //            180deg,
-  //            rgba(62, 75, 150, 1) 3%,
-  //            rgba(39, 42, 115, 1) 81%
-  //          );
-  //        }
-  //      }
-  //    }
-  //  }
+  @media screen and (max-width: 1360px) {
+    &__conteiner {
+      margin-left: 5%;
+      gap: 10px;
+    }
+    &__text {
+      &-decoration {
+        font-size: 19px;
+      }
+      &-title {
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    &__conteiner {
+      flex-direction: column;
+    }
+    &__text {
+      max-width: 100%;
+      margin-right: 5%;
+      text-align: center;
+      &-title {
+        line-height: 61px;
+      }
+      &-subtitle {
+        padding-bottom: 40px;
+      }
+    }
+    &__button {
+      &.mob {
+        display: block;
+      }
+      &.desk {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__text {
+      &-decoration {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      &-title {
+        font-size: 52px;
+        line-height: 61px;
+      }
+      &-subtitle {
+        font-size: 18px;
+        line-height: 140%;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &__buttons-group {
+      background: url(../images/header/meet/btnGroupMob.svg) top right no-repeat;
+      min-width: 270px;
+      height: 272px;
+    }
+  }
 }

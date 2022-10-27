@@ -3,6 +3,7 @@ body {
   background: #000;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 main {
   margin-top: -1px;
@@ -12,6 +13,9 @@ main {
 .conteiner {
   width: 80%;
   margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
 }
 a {
   text-decoration: none;
