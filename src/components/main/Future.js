@@ -8,8 +8,10 @@ const Future = () => {
         <div className="table">
           <div className="table__start">
             <button className="table__item">Artificial Intelligence</button>
-            <button className="table__item">Storage Networks</button>
-            <button className="table__item">P2P Networks</button>
+            <div className="table__start-conteiner">
+              <button className="table__item"> Storage Networks</button>
+              <button className="table__item">P2P Networks</button>
+            </div>
           </div>
           <div className="table__center">
             <button className="table__item">Public Data</button>
@@ -20,8 +22,11 @@ const Future = () => {
               Easy to use digital service and exclusive personal service for our
               active traders
             </p>
-            <button className="table__item">Storage Networks</button>
-            <button className="table__item">P2P Networks</button>
+            <div className="table__end-conteiner">
+              <button className="table__item">Storage Networks</button>
+
+              <button className="table__item">P2P Networks</button>
+            </div>
           </div>
         </div>
         <div className="future__text">
