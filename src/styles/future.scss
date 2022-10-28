@@ -58,6 +58,49 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 170%;
+      transition: 0.3s;
+      &:hover {
+        animation: hoverButton 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+      @keyframes hoverButton {
+        0% {
+          background: linear-gradient(
+            113deg,
+            rgba(15, 19, 41, 1) 0%,
+            rgba(0, 0, 0, 1) 47%,
+            rgba(0, 0, 0, 1) 75%,
+            rgba(0, 0, 0, 1) 100%
+          );
+        }
+        50% {
+          background: linear-gradient(
+            113deg,
+            rgba(15, 19, 41, 1) 0%,
+            rgba(15, 19, 41, 1) 47%,
+            rgba(0, 0, 0, 1) 75%,
+            rgba(0, 0, 0, 1) 100%
+          );
+        }
+        75% {
+          background: linear-gradient(
+            113deg,
+            rgba(15, 19, 41, 1) 0%,
+            rgba(15, 19, 41, 1) 47%,
+            rgba(15, 19, 41, 1) 75%,
+            rgba(0, 0, 0, 1) 100%
+          );
+        }
+        100% {
+          background: linear-gradient(
+            113deg,
+            rgba(15, 19, 41, 1) 0%,
+            rgba(15, 19, 41, 1) 47%,
+            rgba(15, 19, 41, 1) 75%,
+            rgba(15, 19, 41, 1) 100%
+          );
+        }
+      }
     }
     &__start {
       width: 216px;
@@ -94,6 +137,36 @@
       button {
         color: #fff;
         position: relative;
+        &:hover {
+          animation: hoverButton 0.3s linear;
+          animation-fill-mode: forwards;
+        }
+        @keyframes hoverButton {
+          0% {
+            background: linear-gradient(
+              113deg,
+              rgba(15, 19, 41, 1) 0%,
+              rgba(0, 0, 0, 1) 47%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          }
+          50% {
+            background: linear-gradient(
+              113deg,
+              rgba(15, 19, 41, 1) 0%,
+              rgba(15, 19, 41, 1) 47%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          }
+          100% {
+            background: linear-gradient(
+              113deg,
+              rgba(15, 19, 41, 1) 0%,
+              rgba(15, 19, 41, 1) 47%,
+              rgba(15, 19, 41, 1) 100%
+            );
+          }
+        }
         &::after {
           content: "";
           position: absolute;
@@ -123,6 +196,7 @@
       button {
         color: #fff;
         position: relative;
+
         &::before {
           content: "";
           position: absolute;
@@ -150,6 +224,9 @@
       align-items: center;
       padding: 76px 30px 77px 30px;
       border-radius: 25px;
+      box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
+      -webkit-box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
+      -moz-box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
       background: linear-gradient(
         142deg,
         rgba(14, 15, 20, 1) 0%,

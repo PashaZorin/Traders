@@ -1,6 +1,8 @@
 .header {
   &__logo {
-    box-shadow: -53px 130px 155px -40px rgba(153, 149, 149, 0.75);
+    box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
+    -webkit-box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
+    -moz-box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
   }
   &__menu {
     display: flex;
@@ -36,11 +38,11 @@
         font-size: 18px;
         line-height: 21px;
         padding: 18px;
-        background: linear-gradient(
-          to bottom,
-          rgb(30, 30, 30) 0%,
-          rgba(31, 30, 30, 0.308) 99%
-        );
+        //background: linear-gradient(
+        //  to bottom,
+        //  rgb(30, 30, 30) 0%,
+        //  rgba(31, 30, 30, 0.308) 99%
+        //);
         box-shadow: 0px 0px 49px rgba(0, 0, 0, 0);
         transition: all 0.6s;
         border-radius: 10px;
@@ -51,14 +53,46 @@
           padding: 10px 30px;
         }
         &:hover {
-          color: #000;
-
-          background: linear-gradient(
-            140.6deg,
-            #ffffff -27.18%,
-            #dedede 126.06%
-          );
-          box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+          animation: hoverButton 0.3s linear;
+          animation-fill-mode: forwards;
+        }
+        @keyframes hoverButton {
+          0% {
+            background: linear-gradient(
+              113deg,
+              rgba(15, 19, 41, 1) 0%,
+              rgba(0, 0, 0, 1) 47%,
+              rgba(0, 0, 0, 1) 75%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          }
+          50% {
+            background: linear-gradient(
+              113deg,
+              rgba(15, 19, 41, 1) 0%,
+              rgba(15, 19, 41, 1) 47%,
+              rgba(0, 0, 0, 1) 75%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          }
+          75% {
+            background: linear-gradient(
+              113deg,
+              rgba(15, 19, 41, 1) 0%,
+              rgba(15, 19, 41, 1) 47%,
+              rgba(15, 19, 41, 1) 75%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          }
+          100% {
+            background: linear-gradient(
+              113deg,
+              rgba(15, 19, 41, 1) 0%,
+              rgba(15, 19, 41, 1) 47%,
+              rgba(15, 19, 41, 1) 75%,
+              rgba(15, 19, 41, 1) 100%
+            );
+          }
         }
       }
     }

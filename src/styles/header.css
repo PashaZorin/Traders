@@ -1,6 +1,7 @@
 .header__logo {
-  -webkit-box-shadow: -53px 130px 155px -40px rgba(153, 149, 149, 0.75);
-          box-shadow: -53px 130px 155px -40px rgba(153, 149, 149, 0.75);
+  box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
+  -webkit-box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
+  -moz-box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
 }
 
 .header__menu {
@@ -54,8 +55,6 @@
   font-size: 18px;
   line-height: 21px;
   padding: 18px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), color-stop(99%, rgba(31, 30, 30, 0.308)));
-  background: linear-gradient(to bottom, #1e1e1e 0%, rgba(31, 30, 30, 0.308) 99%);
   -webkit-box-shadow: 0px 0px 49px rgba(0, 0, 0, 0);
           box-shadow: 0px 0px 49px rgba(0, 0, 0, 0);
   -webkit-transition: all 0.6s;
@@ -76,10 +75,40 @@
 }
 
 .header__menu-list a:hover {
-  color: #000;
-  background: linear-gradient(140.6deg, #ffffff -27.18%, #dedede 126.06%);
-  -webkit-box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
-          box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+  -webkit-animation: hoverButton 0.3s linear;
+          animation: hoverButton 0.3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hoverButton {
+  0% {
+    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 75%, black 100%);
+  }
+  50% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 75%, black 100%);
+  }
+  75% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, black 100%);
+  }
+  100% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, #0f1329 100%);
+  }
+}
+
+@keyframes hoverButton {
+  0% {
+    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 75%, black 100%);
+  }
+  50% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 75%, black 100%);
+  }
+  75% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, black 100%);
+  }
+  100% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, #0f1329 100%);
+  }
 }
 
 .header__menu-btn {

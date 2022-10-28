@@ -81,6 +81,45 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 170%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.future .table__item:hover {
+  -webkit-animation: hoverButton 0.3s linear;
+          animation: hoverButton 0.3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hoverButton {
+  0% {
+    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 75%, black 100%);
+  }
+  50% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 75%, black 100%);
+  }
+  75% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, black 100%);
+  }
+  100% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, #0f1329 100%);
+  }
+}
+
+@keyframes hoverButton {
+  0% {
+    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 75%, black 100%);
+  }
+  50% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 75%, black 100%);
+  }
+  75% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, black 100%);
+  }
+  100% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, #0f1329 100%);
+  }
 }
 
 .future .table__start {
@@ -125,6 +164,25 @@
 .future .table__start button {
   color: #fff;
   position: relative;
+}
+
+.future .table__start button:hover {
+  -webkit-animation: hoverButton 0.3s linear;
+          animation: hoverButton 0.3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes hoverButton {
+  0% {
+    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 100%);
+  }
+  50% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 100%);
+  }
+  100% {
+    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 100%);
+  }
 }
 
 .future .table__start button::after {
@@ -199,6 +257,9 @@
           align-items: center;
   padding: 76px 30px 77px 30px;
   border-radius: 25px;
+  box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
+  -webkit-box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
+  -moz-box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
   background: linear-gradient(142deg, #0e0f14 0%, #1d1d1d 50%, #151515 100%);
 }
 

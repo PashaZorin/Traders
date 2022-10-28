@@ -1,7 +1,7 @@
 .meet {
   color: #fff;
   padding-top: 62px;
-  background: url("../images/header/meet/Code.png") 45px 119px no-repeat, url("../images/header/meet/Vector.png") no-repeat;
+  background: url("../images/header/meet/Code.png") 45px 119px no-repeat, url("../images/header/meet/Vector.png") no-repeat, rgba(0, 0, 0, 0.821);
   text-align: center;
 }
 
@@ -67,9 +67,12 @@
 }
 
 .meet__buttons-group {
-  background: url(../images/header/meet/buttonsGroupDesk.svg) top right no-repeat;
+  background: linear-gradient(113deg, rgba(255, 255, 255, 0) 0%, rgba(28, 28, 28, 0) 55%, rgba(5, 2, 18, 0.9052) 100%), url(../images/header/meet/buttonsGroupDesk.svg) top right no-repeat;
   min-width: 586px;
   height: 435px;
+  box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
+  -webkit-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
+  -moz-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
 }
 
 .meet__button {
