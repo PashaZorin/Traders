@@ -9,10 +9,6 @@ const Cards = () => {
     <section className="cards">
       <ul className="conteiner cards__conteiner">
         <li className="card">
-          <div className="card__img">
-            {" "}
-            <img src={Pattern1} alt={Pattern1}></img>{" "}
-          </div>
           <div className="card__text">
             <p className="card__text-description">Spot & Margin</p>
             <h4 className="card__text-title">
@@ -39,27 +35,23 @@ const Cards = () => {
           <div className="card__text">
             <p className="card__text-description">Trading Arena</p>
             <h4 className="card__text-title">
-              Prize pools worth up to USD 1,000,000
+              Prize pools <br /> worth up to <br /> USD 1,000,000
             </h4>
-            <a href="#" className="card__link">
+            <a href="/" className="card__link">
               Learn more
             </a>
           </div>
         </li>
         <li className="card">
           <div className="card__text">
-            <p className="card__text-description">Spot & Margin</p>
+            <p className="card__text-description">mobile app</p>
             <h4 className="card__text-title">
-              Trade <span>200+</span> <br /> pairs with up <br /> to 10x
-              leverage
+              Trade anytime,
+              <br /> anywhere
             </h4>
             <a href="/" className="card__link">
               Learn more
             </a>
-          </div>
-          <div className="card__img">
-            {" "}
-            <img src={Pattern2} alt={Pattern2}></img>{" "}
           </div>
         </li>
       </ul>
