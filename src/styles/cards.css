@@ -53,12 +53,6 @@
   position: relative;
 }
 
-.cards .card__link::after {
-  position: absolute;
-  content: url("../images/header/errow.svg");
-  fill: red;
-}
-
 .cards .card:nth-child(1) {
   background: url("../images/main/cards/Pattern1.svg") top left no-repeat, linear-gradient(150deg, #0e0f14 0%, #0a0a0d 50%, #181819 100%);
   -ms-grid-row: 1;
@@ -149,6 +143,7 @@
 
 @media screen and (max-width: 768px) {
   .cards__conteiner {
+    padding-bottom: 50px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 476px 305px 305px 426px;

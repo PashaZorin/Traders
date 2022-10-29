@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/technologies.scss";
 import TableTech from "./TableTech";
 const Technologies = () => {
+  const [mouseImgActive, setMouseImgActive] = useState(false);
+  const handlerMouseImgActive = () => {
+    setMouseImgActive(!mouseImgActive);
+  };
   return (
     <section className="technologies">
       <div className="technologies__title-conteiner">
+        <span
+          className={`technologies__mouse ${mouseImgActive ? "active" : ""} `}
+          onClick={handlerMouseImgActive}
+        ></span>
         <p className="technologies__subtitle">about us</p>
         <h3 className="technologies__title"> Global technologies</h3>
       </div>
@@ -23,7 +31,9 @@ const Technologies = () => {
             provides a live display of all bids and offers waiting to be
             executed.
           </p>
-          <button className="technologies__button">Start Now</button>
+          <button className="technologies__button hvr-sweep-to-right">
+            Start Now
+          </button>
         </div>
       </div>
     </section>

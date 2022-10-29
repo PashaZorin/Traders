@@ -86,40 +86,7 @@
 }
 
 .future .table__item:hover {
-  -webkit-animation: hoverButton 0.3s linear;
-          animation: hoverButton 0.3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes hoverButton {
-  0% {
-    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 75%, black 100%);
-  }
-  50% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 75%, black 100%);
-  }
-  75% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, black 100%);
-  }
-  100% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, #0f1329 100%);
-  }
-}
-
-@keyframes hoverButton {
-  0% {
-    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 75%, black 100%);
-  }
-  50% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 75%, black 100%);
-  }
-  75% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, black 100%);
-  }
-  100% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 75%, #0f1329 100%);
-  }
+  border: 2px solid linear-gradient(140.6deg, #506ec3 -27.18%, #0c1b6d 126.06%);
 }
 
 .future .table__start {
@@ -166,25 +133,6 @@
   position: relative;
 }
 
-.future .table__start button:hover {
-  -webkit-animation: hoverButton 0.3s linear;
-          animation: hoverButton 0.3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@keyframes hoverButton {
-  0% {
-    background: linear-gradient(113deg, #0f1329 0%, black 47%, black 100%);
-  }
-  50% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, black 100%);
-  }
-  100% {
-    background: linear-gradient(113deg, #0f1329 0%, #0f1329 47%, #0f1329 100%);
-  }
-}
-
 .future .table__start button::after {
   content: "";
   position: absolute;
@@ -211,40 +159,24 @@
 .future .table__center::before {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 262px;
   height: 84px;
-  background: #414656;
+  border: 2px solid #414656;
+  border-right-color: transparent;
   top: calc(50% - 42px);
   left: -14px;
+  z-index: 2;
 }
 
 .future .table__center button {
   color: #fff;
   position: relative;
-}
-
-.future .table__center button::before {
-  content: "";
-  position: absolute;
-  width: 13px;
-  height: 2px;
-  background: #414656;
-  top: calc(50% - 1px);
-  left: -15px;
-}
-
-.future .table__center button::after {
-  content: "";
-  position: absolute;
-  width: 85px;
-  height: 2px;
-  background: #414656;
-  top: calc(50% - 1px);
-  right: -87px;
+  z-index: 3;
 }
 
 .future .table__end {
   width: 265px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,7 +187,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 76px 30px 77px 30px;
+  padding: 76px 30px 80px 30px;
   border-radius: 25px;
   box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
   -webkit-box-shadow: 200px -41px 221px 45px rgba(28, 28, 28, 0.66);
@@ -285,7 +217,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 34px;
+  gap: 31px;
 }
 
 .future .table__end-conteiner button {
@@ -293,35 +225,9 @@
   position: relative;
 }
 
-.future .table__end-conteiner button:nth-child(1)::before, .future .table__end-conteiner button:nth-child(2)::before {
-  position: absolute;
-  content: "";
-  width: 2px;
-  height: 83px;
-  background: linear-gradient(113deg, rgba(136, 137, 144, 0.249737) 0%, #888990 39%, #888990 100%);
-}
-
-.future .table__end-conteiner button:nth-child(1)::after, .future .table__end-conteiner button:nth-child(2)::after {
-  position: absolute;
-  content: url(../images/main/future/VectorArr.svg);
-  stroke: #414656;
-}
-
-.future .table__end-conteiner button:nth-child(1)::before {
-  left: calc(50% - 13px);
-  top: 153px;
-}
-
 .future .table__end-conteiner button:nth-child(1)::after {
   left: calc(50% - 18px);
   top: 228px;
-}
-
-.future .table__end-conteiner button:nth-child(2)::before {
-  left: calc(50% + 13px);
-  top: 76px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .future .table__end-conteiner button:nth-child(2)::after {
@@ -329,6 +235,14 @@
   top: 60px;
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
+}
+
+.future .table__end::after {
+  position: absolute;
+  content: "Consumers";
+  font-size: 16px;
+  line-height: 170%;
+  bottom: -60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -347,6 +261,10 @@
     width: 334px;
     height: 180px;
     padding: 20px 0;
+    background: linear-gradient(288deg, #101320 0%, #10121c 39%, #111111 100%);
+    box-shadow: 200px -177px 186px 83px rgba(11, 12, 28, 0.86);
+    -webkit-box-shadow: 200px -177px 186px 83px rgba(11, 12, 28, 0.86);
+    -moz-box-shadow: 200px -177px 186px 83px rgba(11, 12, 28, 0.86);
   }
   .future .table__start-conteiner {
     display: -webkit-box;
@@ -385,29 +303,24 @@
   }
   .future .table__center::before {
     width: 162px;
-    height: 2px;
-    background: #414656;
+    height: 139px;
     top: 0;
+    z-index: 2;
+    border-right-color: #414656;
+    border-bottom: none;
     left: calc(50% - 81px);
   }
   .future .table__center button {
     color: #fff;
     position: relative;
   }
-  .future .table__center button::before {
-    width: 2px;
-    height: 22px;
-    top: -22px;
-    left: calc(50% - 1px);
-  }
-  .future .table__center button::after {
-    width: 2px;
-    height: 60px;
-    left: calc(50% - 1px);
-    top: 100%;
-  }
   .future .table__end {
     width: 334px;
+    background: #101022;
+    box-shadow: -200px 197px 142px 58px rgba(16, 16, 34, 0.83);
+    -webkit-box-shadow: -200px 197px 142px 58px rgba(16, 16, 34, 0.83);
+    -moz-box-shadow: -200px 197px 142px 58px rgba(16, 16, 34, 0.83);
+    background: linear-gradient(36deg, #101022 0%, #14141a 33%, #111111 100%);
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -439,28 +352,14 @@
     color: #fff;
     position: relative;
   }
-  .future .table__end-conteiner button:nth-child(1)::before, .future .table__end-conteiner button:nth-child(2)::before {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 52px;
-  }
-  .future .table__end-conteiner button:nth-child(1)::after, .future .table__end-conteiner button:nth-child(2)::after {
+  .future .table__end-conteiner button::after {
     position: absolute;
     content: url(../images/main/future/VectorArr.svg);
     stroke: #414656;
   }
-  .future .table__end-conteiner button:nth-child(1)::before {
-    top: 222px;
-    left: 100%;
-  }
   .future .table__end-conteiner button:nth-child(1)::after {
     left: calc(100% - 5px);
     top: 268px;
-  }
-  .future .table__end-conteiner button:nth-child(2)::before {
-    top: 231px;
-    left: 0%;
   }
   .future .table__end-conteiner button:nth-child(2)::after {
     left: -5px;
@@ -486,11 +385,17 @@
   .future__text {
     width: 100%;
   }
-  .future-title {
+  .future__text-title {
     font-size: 35px;
     line-height: 120%;
   }
-  .future p {
+  .future__text-title span:nth-child(2) {
+    background: -webkit-gradient(linear, left top, right top, color-stop(3%, #4b83ff), to(#6aaaff));
+    background: linear-gradient(90deg, #4b83ff 3%, #6aaaff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .future__text p {
     font-size: 16px;
   }
 }

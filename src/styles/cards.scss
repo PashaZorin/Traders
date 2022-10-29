@@ -22,6 +22,7 @@
       rgba(10, 10, 13, 1) 50%,
       rgba(24, 24, 25, 1) 100%
     );
+
     &__text {
       padding: 37px 15px 37px 30px;
       display: flex;
@@ -43,11 +44,6 @@
     }
     &__link {
       position: relative;
-      &::after {
-        position: absolute;
-        content: url("../images/header/errow.svg");
-        fill: red;
-      }
     }
     &:nth-child(1) {
       background: url("../images/main/cards/Pattern1.svg") top left no-repeat,
@@ -104,6 +100,7 @@
           rgba(10, 10, 13, 1) 50%,
           rgba(24, 24, 25, 1) 100%
         );
+
       grid-area: mobile;
       display: flex;
       justify-content: space-between;
@@ -128,6 +125,7 @@
   }
   @media screen and (max-width: 768px) {
     &__conteiner {
+      padding-bottom: 50px;
       grid-template-columns: 1fr;
       grid-template-rows: 476px 305px 305px 426px;
       grid-template-areas:

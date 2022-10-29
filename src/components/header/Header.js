@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import C from "../../images/header/C.png";
 import "../../styles/header.scss";
-import errow from "../../images/header/errow.svg";
 import Meet from "./Meet";
+import Errow from "../Errow";
 
 const Header = () => {
   const [menuMobIsActive, setMenuMobIsActive] = useState(false);
@@ -31,13 +31,15 @@ const Header = () => {
           {navItems.map((item) => {
             return (
               <li key={item.text}>
-                <Link to={item.toId}>{item.text}</Link>
+                <Link to={item.toId} className="hvr-underline-from-left">
+                  {item.text}
+                </Link>
               </li>
             );
           })}
           <li>
-            <button className="header__menu-btn">
-              Career <img src={errow} alt="shape"></img>
+            <button className="header__menu-btn hvr-sweep-to-right">
+              Career <Errow />
             </button>
           </li>
         </ul>

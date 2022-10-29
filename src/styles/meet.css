@@ -1,7 +1,7 @@
 .meet {
   color: #fff;
   padding-top: 62px;
-  background: url("../images/header/meet/Code.png") 45px 119px no-repeat, url("../images/header/meet/Vector.png") no-repeat, rgba(0, 0, 0, 0.821);
+  background: url("../images/header/meet/Code.png") 45px 119px no-repeat, url("../images/header/meet/Vector.png") no-repeat;
   text-align: center;
 }
 
@@ -96,26 +96,27 @@
   display: none;
 }
 
+.meet__button::before {
+  border-radius: 10px;
+  background: linear-gradient(140.6deg, #506ec3 -27.18%, #162789 126.06%) !important;
+  -webkit-box-shadow: 0px 0px 49px rgba(22, 39, 137, 0.4);
+          box-shadow: 0px 0px 49px rgba(22, 39, 137, 0.4);
+}
+
 .meet__button img {
   margin-left: 34px;
   padding: 15px 13px;
   background-color: #fff;
   border-radius: 50%;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.meet__button:hover {
-  background: linear-gradient(140.6deg, #506ec3 -27.18%, #506ec3 126.06%);
-  -webkit-box-shadow: 0px 0px 49px rgba(241, 241, 245, 0.4);
-          box-shadow: 0px 0px 49px rgba(241, 241, 245, 0.4);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
 .meet__button:hover img {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 @media screen and (max-width: 1360px) {

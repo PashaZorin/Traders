@@ -1,14 +1,11 @@
 import React from "react";
 import "../../styles/cards.scss";
-import Pattern1 from "../../images/main/cards/Pattern1.svg";
-import Pattern2 from "../../images/main/cards/Pattern2.svg";
-import errow from "../../images/header/errow.svg";
 
 const Cards = () => {
   return (
     <section className="cards">
       <ul className="conteiner cards__conteiner">
-        <li className="card">
+        <li className="card hvr-grow-shadow">
           <div className="card__text">
             <p className="card__text-description">Spot & Margin</p>
             <h4 className="card__text-title">
@@ -20,7 +17,7 @@ const Cards = () => {
             </a>
           </div>
         </li>
-        <li className="card">
+        <li className="card hvr-grow-shadow">
           <div className="card__text">
             <p className="card__text-description">Derivatives</p>
             <h4 className="card__text-title">
@@ -31,7 +28,7 @@ const Cards = () => {
             </a>
           </div>
         </li>
-        <li className="card">
+        <li className="card hvr-grow-shadow">
           <div className="card__text">
             <p className="card__text-description">Trading Arena</p>
             <h4 className="card__text-title">
@@ -42,7 +39,7 @@ const Cards = () => {
             </a>
           </div>
         </li>
-        <li className="card">
+        <li className="card hvr-grow-shadow">
           <div className="card__text">
             <p className="card__text-description">mobile app</p>
             <h4 className="card__text-title">

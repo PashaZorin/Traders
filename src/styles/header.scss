@@ -1,8 +1,8 @@
 .header {
   &__logo {
-    box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
-    -webkit-box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
-    -moz-box-shadow: -15px 173px 211px 45px rgba(20, 20, 20, 0.66);
+    box-shadow: 50px -163px 223px 83px rgba(11, 12, 23, 0.86);
+    -webkit-box-shadow: 50px -163px 223px 83px rgba(11, 12, 23, 0.86);
+    -moz-box-shadow: 50px -163px 223px 83px rgba(11, 12, 23, 0.86);
   }
   &__menu {
     display: flex;
@@ -38,61 +38,21 @@
         font-size: 18px;
         line-height: 21px;
         padding: 18px;
-        //background: linear-gradient(
-        //  to bottom,
-        //  rgb(30, 30, 30) 0%,
-        //  rgba(31, 30, 30, 0.308) 99%
-        //);
         box-shadow: 0px 0px 49px rgba(0, 0, 0, 0);
         transition: all 0.6s;
         border-radius: 10px;
+        &::before {
+          background: linear-gradient(
+            140.6deg,
+            #ffffff -27.18%,
+            #dedede 126.06%
+          );
+        }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
           padding: 14;
         }
         @media screen and (max-width: 768px) {
           padding: 10px 30px;
-        }
-        &:hover {
-          animation: hoverButton 0.3s linear;
-          animation-fill-mode: forwards;
-        }
-        @keyframes hoverButton {
-          0% {
-            background: linear-gradient(
-              113deg,
-              rgba(15, 19, 41, 1) 0%,
-              rgba(0, 0, 0, 1) 47%,
-              rgba(0, 0, 0, 1) 75%,
-              rgba(0, 0, 0, 1) 100%
-            );
-          }
-          50% {
-            background: linear-gradient(
-              113deg,
-              rgba(15, 19, 41, 1) 0%,
-              rgba(15, 19, 41, 1) 47%,
-              rgba(0, 0, 0, 1) 75%,
-              rgba(0, 0, 0, 1) 100%
-            );
-          }
-          75% {
-            background: linear-gradient(
-              113deg,
-              rgba(15, 19, 41, 1) 0%,
-              rgba(15, 19, 41, 1) 47%,
-              rgba(15, 19, 41, 1) 75%,
-              rgba(0, 0, 0, 1) 100%
-            );
-          }
-          100% {
-            background: linear-gradient(
-              113deg,
-              rgba(15, 19, 41, 1) 0%,
-              rgba(15, 19, 41, 1) 47%,
-              rgba(15, 19, 41, 1) 75%,
-              rgba(15, 19, 41, 1) 100%
-            );
-          }
         }
       }
     }
@@ -106,20 +66,30 @@
       box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
       border-radius: 10px;
       transition: 0.5s;
+      &::before {
+        border-radius: 10px;
+        background: linear-gradient(
+          140.6deg,
+          rgb(62, 111, 249) -27.18%,
+          #3e53f8
+        ) !important;
+        box-shadow: 0px 0px 49px rgba(62, 111, 249, 0.4);
+      }
       @media screen and (max-width: 768px) {
         padding: 10px 35px;
       }
       @media screen and (min-width: 768px) and (max-width: 1024px) {
         padding: 18px;
       }
-      img {
+      svg {
         transform: rotateZ(0deg);
         transition: 0.5s;
       }
       &:hover {
-        background: linear-gradient(140.6deg, #ffffff -27.18%, #a09e9e 126.06%);
-        box-shadow: 0px 0px 49px rgba(166, 163, 181, 0.4);
-        img {
+        svg {
+          path {
+            fill: #dedede;
+          }
           transform: rotateZ(135deg);
         }
       }

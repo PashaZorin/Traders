@@ -7,15 +7,26 @@ const Future = () => {
       <div className="conteiner future__conteiner">
         <div className="table">
           <div className="table__start">
-            <button className="table__item">Artificial Intelligence</button>
+            <button className="table__item hvr-sweep-to-right">
+              Artificial Intelligence
+            </button>
             <div className="table__start-conteiner">
-              <button className="table__item"> Storage Networks</button>
-              <button className="table__item">P2P Networks</button>
+              <button className="table__item hvr-sweep-to-right">
+                {" "}
+                Storage Networks
+              </button>
+              <button className="table__item hvr-sweep-to-right">
+                P2P Networks
+              </button>
             </div>
           </div>
           <div className="table__center">
-            <button className="table__item">Public Data</button>
-            <button className="table__item">Encrypted Private Data *</button>
+            <button className="table__item hvr-sweep-to-right">
+              Public Data
+            </button>
+            <button className="table__item hvr-sweep-to-right">
+              Encrypted Private Data *
+            </button>
           </div>
           <div className="table__end">
             <p>
@@ -23,9 +34,13 @@ const Future = () => {
               active traders
             </p>
             <div className="table__end-conteiner">
-              <button className="table__item">Storage Networks</button>
+              <button className="table__item hvr-sweep-to-right">
+                Storage Networks
+              </button>
 
-              <button className="table__item">P2P Networks</button>
+              <button className="table__item hvr-sweep-to-right">
+                P2P Networks
+              </button>
             </div>
           </div>
         </div>

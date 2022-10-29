@@ -15,13 +15,13 @@ const Meet = () => {
             Advanced crypto algorithmic trading and efficient cross-chain
             execution, at scale.
           </p>
-          <button className="meet__button mob">
+          <button className="meet__button mob hvr-sweep-to-right">
             Learn More <img src={VectorErrow} alt={VectorErrow} />
           </button>
         </div>
         <div className="meet__buttons-group"></div>
       </div>
-      <button className="meet__button desk">
+      <button className="meet__button desk hvr-sweep-to-right">
         Learn More <img src={VectorErrow} alt={VectorErrow} />
       </button>
     </section>
