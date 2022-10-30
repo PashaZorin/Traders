@@ -66,18 +66,24 @@
   }
 
   &__buttons-group {
-    background: linear-gradient(
-        113deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(28, 28, 28, 0) 55%,
-        rgba(5, 2, 18, 0.9051995798319328) 100%
-      ),
-      url(../images/header/meet/buttonsGroupDesk.svg) top right no-repeat;
+    @media screen and (min-width: 1024px) {
+      background: linear-gradient(
+          147deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(28, 28, 28, 0) 55%,
+          rgba(5, 2, 18, 0.9051995798319328) 100%
+        ),
+        url(../images/header/meet/buttonsGroupDesk.svg) top right no-repeat;
+
+      box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
+      -webkit-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
+      -moz-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
+    }
+    background: url(../images/header/meet/buttonsGroupDesk.svg) top right
+      no-repeat;
+
     min-width: 586px;
     height: 435px;
-    box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
-    -webkit-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
-    -moz-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
   }
   &__button {
     &.mob {
@@ -85,13 +91,14 @@
     }
     margin: 0 auto 75px auto;
     background: linear-gradient(140.6deg, #3e6ff9 -27.18%, #3e53f8 126.06%);
-    box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+    box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4) !important;
     border-radius: 10px;
     padding: 17px 26px;
     font-weight: 500;
     font-size: 18px;
     color: #fff;
     line-height: 21px;
+    overflow: hidden;
     transition: box-shadow 0.3s;
     &::before {
       border-radius: 10px;
@@ -115,6 +122,7 @@
       }
     }
   }
+
   @media screen and (max-width: 1360px) {
     &__conteiner {
       margin-left: 5%;
@@ -147,7 +155,7 @@
     }
     &__button {
       &.mob {
-        display: block;
+        display: inline-block;
       }
       &.desk {
         display: none;

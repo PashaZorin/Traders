@@ -1,9 +1,10 @@
 import React from "react";
 import "../../styles/future.scss";
+import ErrowGroup from "../../images/main/future/ErrowGroup.svg";
 
 const Future = () => {
   return (
-    <section className="future">
+    <section className="future" id="future">
       <div className="conteiner future__conteiner">
         <div className="table">
           <div className="table__start">
@@ -41,6 +42,9 @@ const Future = () => {
               <button className="table__item hvr-sweep-to-right">
                 P2P Networks
               </button>
+            </div>
+            <div className="table__end-img">
+              <img src={ErrowGroup} alt={ErrowGroup} />
             </div>
           </div>
         </div>

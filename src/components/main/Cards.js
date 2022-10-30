@@ -3,9 +3,9 @@ import "../../styles/cards.scss";
 
 const Cards = () => {
   return (
-    <section className="cards">
+    <section className="cards" id="cards">
       <ul className="conteiner cards__conteiner">
-        <li className="card hvr-grow-shadow">
+        <li className="card hvr-grow">
           <div className="card__text">
             <p className="card__text-description">Spot & Margin</p>
             <h4 className="card__text-title">
@@ -17,7 +17,7 @@ const Cards = () => {
             </a>
           </div>
         </li>
-        <li className="card hvr-grow-shadow">
+        <li className="card hvr-grow">
           <div className="card__text">
             <p className="card__text-description">Derivatives</p>
             <h4 className="card__text-title">
@@ -28,7 +28,7 @@ const Cards = () => {
             </a>
           </div>
         </li>
-        <li className="card hvr-grow-shadow">
+        <li className="card hvr-grow">
           <div className="card__text">
             <p className="card__text-description">Trading Arena</p>
             <h4 className="card__text-title">
@@ -39,7 +39,7 @@ const Cards = () => {
             </a>
           </div>
         </li>
-        <li className="card hvr-grow-shadow">
+        <li className="card hvr-grow">
           <div className="card__text">
             <p className="card__text-description">mobile app</p>
             <h4 className="card__text-title">

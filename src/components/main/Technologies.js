@@ -7,7 +7,7 @@ const Technologies = () => {
     setMouseImgActive(!mouseImgActive);
   };
   return (
-    <section className="technologies">
+    <section className="technologies" id="technologies">
       <div className="technologies__title-conteiner">
         <span
           className={`technologies__mouse ${mouseImgActive ? "active" : ""} `}

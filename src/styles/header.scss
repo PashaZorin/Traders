@@ -60,20 +60,21 @@
       padding: 18px 24px 18px 40px;
       background: linear-gradient(140.6deg, #ffffff -27.18%, #dedede 126.06%);
       font-weight: 600;
+      color: #000;
       font-size: 20px;
       line-height: 24px;
       word-spacing: 8px;
-      box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+      overflow: hidden;
       border-radius: 10px;
       transition: 0.5s;
+      box-shadow: 0px 0px 49px rgba(38, 4, 227, 0.498) !important ;
       &::before {
         border-radius: 10px;
         background: linear-gradient(
           140.6deg,
-          rgb(62, 111, 249) -27.18%,
-          #3e53f8
+          #506ec3 -27.18%,
+          #162789 126.06%
         ) !important;
-        box-shadow: 0px 0px 49px rgba(62, 111, 249, 0.4);
       }
       @media screen and (max-width: 768px) {
         padding: 10px 35px;

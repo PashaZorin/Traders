@@ -1,10 +1,11 @@
 import React from "react";
 import "../../styles/meet.scss";
 import VectorErrow from "../../images/header/meet/VectorErrow.png";
+import { Link } from "react-scroll";
 
 const Meet = () => {
   return (
-    <section className="meet">
+    <section className="meet" id="meet">
       <div className=" meet__conteiner">
         <div className="meet__text">
           <p className="meet__text-decoration">crypto trading</p>
@@ -15,15 +16,25 @@ const Meet = () => {
             Advanced crypto algorithmic trading and efficient cross-chain
             execution, at scale.
           </p>
-          <button className="meet__button mob hvr-sweep-to-right">
+          <Link
+            to="future"
+            spy={true}
+            smooth={true}
+            className="meet__button mob hvr-sweep-to-right"
+          >
             Learn More <img src={VectorErrow} alt={VectorErrow} />
-          </button>
+          </Link>
         </div>
         <div className="meet__buttons-group"></div>
       </div>
-      <button className="meet__button desk hvr-sweep-to-right">
+      <Link
+        to="future"
+        spy={true}
+        smooth={true}
+        className="meet__button desk hvr-sweep-to-right"
+      >
         Learn More <img src={VectorErrow} alt={VectorErrow} />
-      </button>
+      </Link>
     </section>
   );
 };

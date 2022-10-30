@@ -12,10 +12,10 @@ const Header = () => {
   };
   console.log(menuMobIsActive);
   const navItems = [
-    { text: "Activities", toId: "#" },
-    { text: "Technology", toId: "#" },
-    { text: "R&D", toId: "#" },
-    { text: "Community", toId: "#" },
+    { text: "Activities", toId: "meet" },
+    { text: "Technology", toId: "technologies" },
+    { text: "R&D", toId: "future" },
+    { text: "Community", toId: "cards" },
   ];
 
   return (
@@ -26,26 +26,36 @@ const Header = () => {
         </div>
         <ul
           className={`header__menu-list
-       ${menuMobIsActive && "active"}  `}
+       ${menuMobIsActive ? "active" : ""}  `}
         >
           {navItems.map((item) => {
             return (
               <li key={item.text}>
-                <Link to={item.toId} className="hvr-underline-from-left">
+                <Link
+                  to={item.toId}
+                  spy={true}
+                  smooth={true}
+                  className="hvr-underline-from-left"
+                >
                   {item.text}
                 </Link>
               </li>
             );
           })}
           <li>
-            <button className="header__menu-btn hvr-sweep-to-right">
+            <Link
+              to="technologies"
+              spy={true}
+              smooth={true}
+              className="header__menu-btn hvr-sweep-to-top"
+            >
               Career <Errow />
-            </button>
+            </Link>
           </li>
         </ul>
         <div
           className={`header__lines-btn
-           ${menuMobIsActive && "active"}  `}
+           ${menuMobIsActive ? "active" : ""}  `}
           onClick={toggleMenu}
         ></div>
       </menu>
