@@ -5,8 +5,7 @@
     background: rgba(47, 42, 42, 0.43);
     z-index: 6;
     @media screen and (max-width: 768px) {
-      box-shadow: 56px -3px 116px 36px rgba(89, 89, 89, 0.61),
-        -200px 30px 77px -78px rgb(248, 0, 0);
+      box-shadow: 56px -3px 116px 36px rgba(89, 89, 89, 0.61);
     }
   }
   &__menu {

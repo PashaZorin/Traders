@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import "../../styles/technologies.scss";
 import TableTech from "./TableTech";
 const Technologies = () => {
@@ -31,9 +32,15 @@ const Technologies = () => {
             provides a live display of all bids and offers waiting to be
             executed.
           </p>
-          <button className="technologies__button hvr-sweep-to-right">
+
+          <Link
+            to="header"
+            spy={true}
+            smooth={true}
+            className="technologies__button hvr-sweep-to-right"
+          >
             Start Now
-          </button>
+          </Link>
         </div>
       </div>
     </section>

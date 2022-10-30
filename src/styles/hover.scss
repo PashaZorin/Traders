@@ -9,7 +9,7 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hov {
+.hvr-grow:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -26,7 +26,7 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-shrink:hov {
+.hvr-shrink:hover {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
@@ -51,7 +51,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -147,14 +146,10 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-sweep-to-bottom:hover,
-.hvr-sweep-to-bottom:focus,
-.hvr-sweep-to-bottom:active {
+.hvr-sweep-to-bottom {
   color: white;
 }
-.hvr-sweep-to-bottom:hover:before,
-.hvr-sweep-to-bottom:focus:before,
-.hvr-sweep-to-bottom:active:before {
+.hvr-sweep-to-bottom:hover {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
@@ -180,7 +175,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -216,7 +210,6 @@
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #2098d1;
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -246,7 +239,6 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2098d1;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -277,7 +269,6 @@
   left: 100%;
   right: 0;
   bottom: 0;
-  background: #2098d1;
   height: 4px;
   -webkit-transition-property: left;
   transition-property: left;
@@ -307,7 +298,6 @@
   left: 0;
   right: 100%;
   top: 0;
-  background: #2098d1;
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -337,7 +327,6 @@
   left: 51%;
   right: 51%;
   top: 0;
-  background: #2098d1;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -368,7 +357,6 @@
   left: 100%;
   right: 0;
   top: 0;
-  background: #2098d1;
   height: 4px;
   -webkit-transition-property: left;
   transition-property: left;

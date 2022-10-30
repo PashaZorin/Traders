@@ -58,6 +58,7 @@ const Header = () => {
           })}
           <li>
             <Link
+              onClick={timeoutToggleMenu}
               to="technologies"
               spy={true}
               smooth={true}
