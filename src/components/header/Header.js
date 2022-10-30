@@ -49,7 +49,7 @@ const Header = () => {
                   to={item.toId}
                   spy={true}
                   smooth={true}
-                  className="hvr-underline-from-left"
+                  className="header__menu-item hvr-underline-from-left"
                 >
                   {item.text}
                 </Link>

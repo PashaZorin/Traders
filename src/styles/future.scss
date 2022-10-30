@@ -88,21 +88,20 @@
     justify-content: center;
     background: linear-gradient(#000, #000) padding-box,
       linear-gradient(#414656, #4146565b) border-box;
+    color: #fff;
+    position: relative;
     border: 2px solid transparent;
     border-radius: 50px;
     border-radius: 11px;
     font-weight: 400;
     font-size: 14px;
     line-height: 170%;
-    overflow: hidden;
-    transition: all 2s ease-in;
     &::before {
       background: linear-gradient(
         140.6deg,
         #506ec3 -27.18%,
         #162789 126.06%
       ) !important;
-      border-radius: 9px;
     }
   }
   &__start {
@@ -145,10 +144,6 @@
       gap: 27px;
       flex-direction: column;
     }
-    button {
-      color: #fff;
-      position: relative;
-    }
   }
   &__center {
     position: relative;
@@ -180,8 +175,6 @@
       z-index: 2;
     }
     button {
-      color: #fff;
-      position: relative;
       z-index: 3;
     }
   }
@@ -220,10 +213,6 @@
       display: flex;
       flex-direction: column;
       gap: 31px;
-      button {
-        color: #fff;
-        position: relative;
-      }
     }
     &-img {
       img {
@@ -302,10 +291,6 @@
         top: -141px;
         z-index: 2;
         left: calc(50% - 1px);
-      }
-      button {
-        color: #fff;
-        position: relative;
       }
     }
     &__end {

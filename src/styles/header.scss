@@ -31,33 +31,23 @@
         transition: left 0.4s;
 
         &.active {
-          //z-index: ;
           left: 0;
         }
       }
       display: flex;
       align-items: center;
       gap: 10px;
-      a {
-        font-size: 18px;
-        line-height: 21px;
-        padding: 18px;
-        box-shadow: 0px 0px 49px rgba(0, 0, 0, 0);
-        transition: all 0.6s;
-        border-radius: 10px;
-        &::before {
-          background: linear-gradient(
-            140.6deg,
-            #ffffff -27.18%,
-            #dedede 126.06%
-          );
-        }
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-          padding: 14;
-        }
-        @media screen and (max-width: 768px) {
-          padding: 10px 30px;
-        }
+    }
+    &-item {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 18px;
+      border-radius: 10px;
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 14;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 10px 30px;
       }
     }
     &-btn {
@@ -68,35 +58,34 @@
       font-size: 20px;
       line-height: 24px;
       word-spacing: 8px;
-      overflow: hidden;
       border-radius: 10px;
-      transition: 0.5s;
-      box-shadow: 0px 0px 49px rgba(38, 4, 227, 0.498) !important ;
-      &::before {
-        border-radius: 10px;
-        background: linear-gradient(
-          140.6deg,
-          #506ec3 -27.18%,
-          #162789 126.06%
-        ) !important;
-      }
-      @media screen and (max-width: 768px) {
-        padding: 10px 35px;
-      }
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
-        padding: 18px;
-      }
+      box-shadow: 0px 0px 49px rgba(38, 4, 227, 0.498) !important;
       svg {
         transform: rotateZ(0deg);
         transition: 0.5s;
       }
-      &:hover {
-        svg {
-          path {
-            fill: #dedede;
+
+      @media screen and (min-width: 1024px) {
+        &:hover {
+          svg {
+            path {
+              fill: #dedede;
+            }
+            transform: rotateZ(135deg);
           }
-          transform: rotateZ(135deg);
         }
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 10px 35px;
+      }
+      @media screen and (max-width: 1023px) {
+        svg {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 18px;
       }
     }
   }

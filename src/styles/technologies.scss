@@ -84,20 +84,19 @@
     background: linear-gradient(140.6deg, #3e6ff9 -27.18%, #3e53f8 126.06%);
     font-weight: 500;
     font-size: 18px;
+    border-radius: 11px;
     line-height: 21px;
     color: #ffffff;
     margin-top: 44px;
     box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
     border-radius: 10px;
-    overflow: hidden;
     &::before {
-      border-radius: 10px;
       background: linear-gradient(
         140.6deg,
         #506ec3 -27.18%,
         #162789 126.06%
       ) !important;
-      box-shadow: 0px 0px 49px rgba(#162789, 0.4) !important;
+      box-shadow: 0px 0px 49px rgba(#162789, 0.4);
     }
   }
   &__schedule {
