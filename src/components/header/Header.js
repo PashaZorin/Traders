@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import C from "../../images/header/C.png";
 import "../../styles/header.scss";
@@ -7,19 +7,32 @@ import Errow from "../Errow";
 
 const Header = () => {
   const [menuMobIsActive, setMenuMobIsActive] = useState(false);
-  const toggleMenu = () => {
-    setMenuMobIsActive(!menuMobIsActive);
-  };
-  console.log(menuMobIsActive);
   const navItems = [
     { text: "Activities", toId: "meet" },
     { text: "Technology", toId: "technologies" },
     { text: "R&D", toId: "future" },
     { text: "Community", toId: "cards" },
   ];
+  useEffect(() => {
+    console.log(window.innerWidth);
+    if (window.innerWidth < 768) {
+      menuMobIsActive
+        ? (document.body.style.overflow = "hidden")
+        : (document.body.style.overflow = "auto");
+    }
+  }, [menuMobIsActive]);
+  const toggleMenu = (e) => {
+    console.log("toggleMenu", "toggleMenu");
+    setMenuMobIsActive(!menuMobIsActive);
+  };
+  const timeoutToggleMenu = () => {
+    setTimeout(() => {
+      toggleMenu();
+    }, 400);
+  };
 
   return (
-    <header className="header">
+    <header className="header" onClick={() => menuMobIsActive && toggleMenu()}>
       <menu className="header__menu conteiner">
         <div className="header__logo">
           <img src={C} alt="logo" />
@@ -32,6 +45,7 @@ const Header = () => {
             return (
               <li key={item.text}>
                 <Link
+                  onClick={timeoutToggleMenu}
                   to={item.toId}
                   spy={true}
                   smooth={true}

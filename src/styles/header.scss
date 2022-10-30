@@ -1,8 +1,13 @@
 .header {
   &__logo {
-    box-shadow: 50px -163px 223px 83px rgba(11, 12, 23, 0.86);
-    -webkit-box-shadow: 50px -163px 223px 83px rgba(11, 12, 23, 0.86);
-    -moz-box-shadow: 50px -163px 223px 83px rgba(11, 12, 23, 0.86);
+    box-shadow: -5px 60px 125px 43px rgba(89, 89, 89, 0.86);
+    box-shadow: -5px 4px 125px 43px rgba(89, 89, 89, 0.53);
+    background: rgba(47, 42, 42, 0.43);
+    z-index: 6;
+    @media screen and (max-width: 768px) {
+      box-shadow: 56px -3px 116px 36px rgba(89, 89, 89, 0.61),
+        -200px 30px 77px -78px rgb(248, 0, 0);
+    }
   }
   &__menu {
     display: flex;
@@ -21,13 +26,13 @@
         top: 60px;
         width: 100%;
         gap: 30px;
-        background: linear-gradient(
-          to bottom,
-          rgb(30, 30, 30) 0%,
-          rgb(5, 5, 5) 99%
-        );
+        background: url("../images/header/meet/Vector.png") no-repeat,
+          linear-gradient(178deg, rgb(10, 10, 10) 0%, rgb(2, 2, 2) 96%);
+        padding-top: 50px;
         transition: left 0.4s;
+
         &.active {
+          //z-index: ;
           left: 0;
         }
       }
@@ -101,6 +106,7 @@
     position: relative;
     width: 32px;
     height: 32px;
+
     @media screen and (max-width: 768px) {
       display: block;
       cursor: pointer;
