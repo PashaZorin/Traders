@@ -172,6 +172,24 @@
       &-title {
         font-size: 52px;
         line-height: 61px;
+        span {
+          background: linear-gradient(
+            90deg,
+            #4b83ff 3%,
+            #6aaaff 50%,
+            #c67aff 100%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          &::before {
+            background: linear-gradient(
+              89.95deg,
+              #d0b1e7 -1.65%,
+              #b36ee7 51.06%,
+              #bd66ff 99.96%
+            );
+          }
+        }
       }
       &-subtitle {
         font-size: 18px;
