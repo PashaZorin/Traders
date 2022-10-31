@@ -9,7 +9,7 @@ const Technologies = () => {
   };
   return (
     <section className="technologies" id="technologies">
-      <div className="technologies__title-conteiner">
+      <div className="technologies__title-container">
         <span
           className={`technologies__mouse ${mouseImgActive ? "active" : ""} `}
           onClick={handlerMouseImgActive}
@@ -17,7 +17,7 @@ const Technologies = () => {
         <p className="technologies__subtitle">about us</p>
         <h3 className="technologies__title"> Global technologies</h3>
       </div>
-      <div className="technologies__conteiner conteiner">
+      <div className="technologies__container container">
         <div className="technologies__schedule">
           <TableTech />
         </div>

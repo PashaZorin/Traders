@@ -1,17 +1,17 @@
 import React from "react";
 import "../../styles/future.scss";
-import ErrowGroup from "../../images/main/future/ErrowGroup.svg";
+import ArrowGroup from "../../images/main/future/ArrowGroup.svg";
 
 const Future = () => {
   return (
     <section className="future" id="future">
-      <div className="conteiner future__conteiner">
+      <div className="container future__container">
         <div className="table">
           <div className="table__start">
             <button className="table__item hvr-sweep-to-right">
               Artificial Intelligence
             </button>
-            <div className="table__start-conteiner">
+            <div className="table__start-container">
               <button className="table__item hvr-sweep-to-right">
                 {" "}
                 Storage Networks
@@ -34,7 +34,7 @@ const Future = () => {
               Easy to use digital service and exclusive personal service for our
               active traders
             </p>
-            <div className="table__end-conteiner">
+            <div className="table__end-container">
               <button className="table__item hvr-sweep-to-right">
                 Storage Networks
               </button>
@@ -44,7 +44,7 @@ const Future = () => {
               </button>
             </div>
             <div className="table__end-img">
-              <img src={ErrowGroup} alt={ErrowGroup} />
+              <img src={ArrowGroup} alt={ArrowGroup} />
             </div>
           </div>
         </div>

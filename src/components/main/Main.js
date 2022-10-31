@@ -1,4 +1,5 @@
 import React from "react";
+import Meet from "./Meet";
 import Cards from "./Cards";
 import Future from "./Future";
 import Technologies from "./Technologies";
@@ -6,9 +7,12 @@ import Technologies from "./Technologies";
 const Main = () => {
   return (
     <main>
-      <Technologies />
-      <Future />
-      <Cards />
+      <Meet />
+      <div className="main__container">
+        <Technologies />
+        <Future />
+        <Cards />
+      </div>
     </main>
   );
 };

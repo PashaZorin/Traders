@@ -1,12 +1,13 @@
+@import "./variables.scss";
 .meet {
   color: #fff;
-  padding-top: 62px;
-  background: url("../images/header/meet/Code.png") 45px 119px no-repeat,
+  padding-top: 60px;
+  background: url("../images/header/meet/Code.png") 45px 120px no-repeat,
     url("../images/header/meet/Vector.png") no-repeat;
   text-align: center;
-  &__conteiner {
+  &__container {
     display: flex;
-    gap: 92px;
+    gap: 90px;
     justify-content: space-between;
     margin-left: 10%;
   }
@@ -15,7 +16,7 @@
     &-decoration {
       font-weight: 500;
       font-size: 19px;
-      line-height: 23px;
+      line-height: 20px;
       text-transform: uppercase;
       color: #aaaaaa;
       position: relative;
@@ -28,12 +29,7 @@
       text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
       span {
         display: inline-block;
-        background: linear-gradient(
-          89.95deg,
-          #487fff -1.65%,
-          #73b5ff 51.06%,
-          #73b5ff 99.96%
-        );
+        background: $light;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -45,12 +41,7 @@
           content: "";
           width: 35px;
           height: 5px;
-          background: linear-gradient(
-            89.95deg,
-            #487fff -1.65%,
-            #73b5ff 51.06%,
-            #73b5ff 99.96%
-          );
+          background: linear-gradient(90deg, #73b5ff -1%, #c67aff);
           bottom: 10px;
           right: -60px;
         }
@@ -66,7 +57,7 @@
   }
 
   &__buttons-group {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $screen__laptop) {
       background: linear-gradient(
           147deg,
           rgba(255, 255, 255, 0) 0%,
@@ -77,12 +68,11 @@
 
       box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
       -webkit-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
-      -moz-box-shadow: 200px 185px 221px 45px rgba(5, 2, 18, 0.66);
     }
     background: url(../images/header/meet/buttonsGroupDesk.svg) top right
       no-repeat;
 
-    min-width: 586px;
+    min-width: 585px;
     height: 435px;
   }
   &__button {
@@ -91,25 +81,16 @@
     }
     display: inline-block;
     margin: 0 auto 75px auto;
-    background: linear-gradient(140.6deg, #3e6ff9 -27.18%, #3e53f8 126.06%);
-    box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4) !important;
+    background: $primary;
+    box-shadow: $primary__shadow;
     border-radius: 10px;
     padding: 17px 26px;
     font-weight: 500;
     font-size: 18px;
     color: #fff;
-    line-height: 21px;
+    line-height: 20px;
     overflow: hidden;
     transition: box-shadow 0.3s;
-    &::before {
-      border-radius: 10px;
-      background: linear-gradient(
-        140.6deg,
-        #506ec3 -27.18%,
-        #162789 126.06%
-      ) !important;
-      box-shadow: 0px 0px 49px rgba(#162789, 0.4);
-    }
     img {
       margin-left: 34px;
       padding: 15px 13px;
@@ -125,7 +106,7 @@
   }
 
   @media screen and (max-width: 1360px) {
-    &__conteiner {
+    &__container {
       margin-left: 5%;
       gap: 10px;
     }
@@ -139,8 +120,8 @@
       }
     }
   }
-  @media screen and (max-width: 1024px) {
-    &__conteiner {
+  @media screen and (max-width: $screen__laptop) {
+    &__container {
       flex-direction: column;
     }
     &__text {
@@ -148,7 +129,7 @@
       margin-right: 5%;
       text-align: center;
       &-title {
-        line-height: 61px;
+        line-height: 60px;
       }
       &-subtitle {
         padding-bottom: 40px;
@@ -171,22 +152,17 @@
       }
       &-title {
         font-size: 52px;
-        line-height: 61px;
+        line-height: 60px;
         span {
-          background: linear-gradient(
-            90deg,
-            #4b83ff 3%,
-            #6aaaff 50%,
-            #c67aff 100%
-          );
+          background: $blue-pink;
           background-clip: text;
           -webkit-text-fill-color: transparent;
           &::before {
             background: linear-gradient(
-              89.95deg,
-              #d0b1e7 -1.65%,
-              #b36ee7 51.06%,
-              #bd66ff 99.96%
+              90deg,
+              #d0b1e7 -1%,
+              #b36ee7 51%,
+              #bd66ff 99%
             );
           }
         }
@@ -197,7 +173,7 @@
       }
     }
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: screen__phone-sm) {
     &__buttons-group {
       background: url(../images/header/meet/btnGroupMob.svg) top right no-repeat;
       min-width: 270px;

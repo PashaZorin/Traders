@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import C from "../../images/header/C.png";
 import "../../styles/header.scss";
-import Meet from "./Meet";
-import Errow from "../Errow";
+import Arrow from "../Arrow";
 
 const Header = () => {
   const [menuMobIsActive, setMenuMobIsActive] = useState(false);
@@ -14,7 +13,6 @@ const Header = () => {
     { text: "Community", toId: "cards" },
   ];
   useEffect(() => {
-    console.log(window.innerWidth);
     if (window.innerWidth < 768) {
       menuMobIsActive
         ? (document.body.style.overflow = "hidden")
@@ -22,7 +20,6 @@ const Header = () => {
     }
   }, [menuMobIsActive]);
   const toggleMenu = (e) => {
-    console.log("toggleMenu", "toggleMenu");
     setMenuMobIsActive(!menuMobIsActive);
   };
   const timeoutToggleMenu = () => {
@@ -33,7 +30,7 @@ const Header = () => {
 
   return (
     <header className="header" onClick={() => menuMobIsActive && toggleMenu()}>
-      <menu className="header__menu conteiner">
+      <menu className="header__menu container">
         <div className="header__logo">
           <img src={C} alt="logo" />
         </div>
@@ -64,7 +61,7 @@ const Header = () => {
               smooth={true}
               className="header__menu-btn hvr-sweep-to-top"
             >
-              Career <Errow />
+              Career <Arrow />
             </Link>
           </li>
         </ul>
@@ -74,7 +71,6 @@ const Header = () => {
           onClick={toggleMenu}
         ></div>
       </menu>
-      <Meet />
     </header>
   );
 };

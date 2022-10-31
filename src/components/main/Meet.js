@@ -1,12 +1,12 @@
 import React from "react";
 import "../../styles/meet.scss";
-import VectorErrow from "../../images/header/meet/VectorErrow.png";
+import VectorArrow from "../../images/header/meet/VectorArrow.png";
 import { Link } from "react-scroll";
 
 const Meet = () => {
   return (
     <section className="meet" id="meet">
-      <div className=" meet__conteiner">
+      <div className=" meet__container">
         <div className="meet__text">
           <p className="meet__text-decoration">crypto trading</p>
           <h1 className="meet__text-title">
@@ -22,7 +22,7 @@ const Meet = () => {
             smooth={true}
             className="meet__button mob hvr-sweep-to-right"
           >
-            Learn More <img src={VectorErrow} alt={VectorErrow} />
+            Learn More <img src={VectorArrow} alt={VectorArrow} />
           </Link>
         </div>
         <div className="meet__buttons-group"></div>
@@ -33,7 +33,7 @@ const Meet = () => {
         smooth={true}
         className="meet__button desk hvr-sweep-to-right"
       >
-        Learn More <img src={VectorErrow} alt={VectorErrow} />
+        Learn More <img src={VectorArrow} alt={VectorArrow} />
       </Link>
     </section>
   );

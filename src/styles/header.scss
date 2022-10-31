@@ -1,6 +1,6 @@
+@import "./variables.scss";
 .header {
   &__logo {
-    box-shadow: -5px 60px 125px 43px rgba(89, 89, 89, 0.86);
     box-shadow: -5px 4px 125px 43px rgba(89, 89, 89, 0.53);
     background: rgba(47, 42, 42, 0.43);
     z-index: 6;
@@ -22,26 +22,26 @@
       line-height: 21px;
       padding: 18px;
       border-radius: 10px;
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
-        padding: 14;
+      @media screen and (min-width: 768px) and (max-width: $screen__laptop) {
+        padding: 14px;
       }
     }
     &-btn {
       padding: 18px 24px 18px 40px;
-      background: linear-gradient(140.6deg, #ffffff -27.18%, #dedede 126.06%);
+      background: linear-gradient(140deg, #ffffff -27%, #dedede 126%);
       font-weight: 600;
       color: #000;
       font-size: 20px;
-      line-height: 24px;
+      line-height: 25px;
       word-spacing: 8px;
       border-radius: 10px;
-      box-shadow: 0px 0px 49px rgba(38, 4, 227, 0.498) !important;
+      box-shadow: 0px 0px 49px rgba(38, 4, 227, 0.498);
       svg {
         transform: rotateZ(0deg);
         transition: 0.5s;
       }
 
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: $screen__laptop) {
         &:hover {
           svg {
             path {
@@ -57,7 +57,7 @@
           display: none;
         }
       }
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
+      @media screen and (min-width: 768px) and (max-width: $screen__laptop) {
         padding: 18px;
       }
     }
@@ -75,14 +75,13 @@
       width: 32px;
       height: 2px;
       transition: 0.5s;
+      right: 0;
     }
     &::before {
       top: calc(50% - 3px);
-      right: 0;
     }
     &::after {
       top: calc(50% + 3px);
-      right: 0;
     }
     &.active {
       &::before {

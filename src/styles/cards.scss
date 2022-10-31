@@ -1,5 +1,6 @@
+@import "./variables.scss";
 .cards {
-  &__conteiner {
+  &__container {
     display: grid;
     grid-template-columns: 3fr 2fr 2fr;
     grid-template-rows: 358px 303px;
@@ -65,12 +66,7 @@
             font-size: 40px;
             line-height: 120%;
             letter-spacing: 0.02em;
-            background: linear-gradient(
-              89.95deg,
-              #487fff -1.65%,
-              #73b5ff 51.06%,
-              #cb76ff 99.96%
-            );
+            background: $blue-pink;
             background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -107,8 +103,8 @@
       justify-content: space-between;
     }
   }
-  @media screen and (max-width: 1024px) {
-    &__conteiner {
+  @media screen and (max-width: $screen__laptop) {
+    &__container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
@@ -125,7 +121,7 @@
     }
   }
   @media screen and (max-width: 768px) {
-    &__conteiner {
+    &__container {
       padding-bottom: 50px;
       grid-template-columns: 1fr;
       grid-template-rows: 476px 305px 305px 426px;

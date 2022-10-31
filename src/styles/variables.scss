@@ -1,0 +1,15 @@
+$primary: linear-gradient(140deg, #3e6ff9 -27%, #3e53f8 126%);
+$secondary: linear-gradient(140deg, #506ec3 -27%, #162789 126%);
+$light: linear-gradient(90deg, #487fff -1%, #73b5ff 100%);
+$primary__shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+$blue-pink: linear-gradient(
+  90deg,
+  rgba(75, 131, 255, 1) 3%,
+  rgba(106, 170, 255, 1) 60%,
+  rgba(198, 122, 255, 1) 100%
+);
+
+$screen__phone-sm: 480px;
+$screen__phone: 768px;
+$screen__laptop: 1024px;
+$screen__monitor: 1300px;

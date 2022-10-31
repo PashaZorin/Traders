@@ -1,6 +1,6 @@
 import React from "react";
 
-const Errow = () => {
+const Arrow = () => {
   return (
     <svg
       width="14"
@@ -17,4 +17,4 @@ const Errow = () => {
   );
 };
 
-export default Errow;
+export default Arrow;

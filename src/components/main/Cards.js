@@ -4,7 +4,7 @@ import "../../styles/cards.scss";
 const Cards = () => {
   return (
     <section className="cards" id="cards">
-      <ul className="conteiner cards__conteiner">
+      <ul className="container cards__container">
         <li className="card hvr-grow">
           <div className="card__text">
             <p className="card__text-description">Spot & Margin</p>

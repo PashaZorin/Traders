@@ -1,6 +1,6 @@
 import React from "react";
 
-const ErrowGroup = () => {
+const ArrowGroup = () => {
   return (
     <svg
       width="42"
@@ -65,4 +65,4 @@ const ErrowGroup = () => {
   );
 };
 
-export default ErrowGroup;
+export default ArrowGroup;
