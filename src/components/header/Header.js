@@ -12,15 +12,15 @@ const Header = () => {
     { text: "R&D", toId: "future" },
     { text: "Community", toId: "cards" },
   ];
-  const chengeOverflow = () => {
-    if (window.innerWidth < 768) {
-      menuMobIsActive
-        ? (document.body.style.overflow = "hidden")
-        : (document.body.style.overflow = "auto");
-    }
-  };
+  //const chengeOverflow = () => {
+  //  if (window.innerWidth < 768 && menuMobIsActive) {
+  //    menuMobIsActive
+  //      ? (document.body.style.overflow = "hidden")
+  //      : (document.body.style.overflow = "auto");
+  //  }
+  //};
   useEffect(() => {
-    chengeOverflow();
+    //chengeOverflow();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [menuMobIsActive]);
   const toggleMenu = (e) => {
