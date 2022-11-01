@@ -5,6 +5,7 @@ body {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 .main__container {
   margin-top: -1px;
@@ -34,12 +35,4 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-button,
-a {
-  &:focus-visible,
-  &:active,
-  &:focus {
-    -webkit-tap-highlight-color: transparent;
-  }
 }
