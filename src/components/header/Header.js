@@ -12,12 +12,16 @@ const Header = () => {
     { text: "R&D", toId: "future" },
     { text: "Community", toId: "cards" },
   ];
-  useEffect(() => {
+  const chengeOverflow = () => {
     if (window.innerWidth < 768) {
       menuMobIsActive
         ? (document.body.style.overflow = "hidden")
         : (document.body.style.overflow = "auto");
     }
+  };
+  useEffect(() => {
+    chengeOverflow();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [menuMobIsActive]);
   const toggleMenu = (e) => {
     setMenuMobIsActive(!menuMobIsActive);
