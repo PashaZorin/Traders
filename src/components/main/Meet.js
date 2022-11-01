@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/meet.scss";
-import VectorArrow from "../../images/header/meet/VectorArrow.png";
+import VectorArrow from "../../images/main/meet/VectorArrow.png";
 import { Link } from "react-scroll";
 
 const Meet = () => {
